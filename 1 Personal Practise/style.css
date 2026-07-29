@@ -1,0 +1,7 @@
+p[draggable="false"] {
+    color: red;
+}
+
+p[draggable="true"] {
+    color: blue;
+}

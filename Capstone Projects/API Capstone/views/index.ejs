@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRYPTO Market</title>
+  </head>
+  <body>
+    <h1>Welcome to the Crypto Exchange Market</h1>
+    <form action="/submit" method="POST">
+        <input type="text" name="userQuery" placeholder="Search by name or Symbol" required>
+        <button type="submit" >Search Coin</button>
+    </form>
+
+     <ul>
+        <% coins.forEach((coin) => { %>
+            
+       <li>Rank <%= coin.rank %>: <%= coin.name %> (<%= coin.symbol %>) $
+        <%= coin.quotes.USD.price.toFixed(2)%>
+    </li> 
+            
+        <% }); %> </ul> 
+
+
+  </body>
+</html>

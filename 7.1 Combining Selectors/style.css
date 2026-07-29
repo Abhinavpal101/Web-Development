@@ -1,0 +1,27 @@
+/* Write your code here: */
+
+/* Grouping Selectors: Combines multiple selectors using commas to apply the same styles. */
+h1,
+h2 {
+    color: blueviolet;
+}
+
+/* Child Selectors: Uses the > symbol to select direct children of a parent element. */
+.box>p {
+    color: firebrick;
+}
+
+/* Descendant Selectors: Targets elements nested within a parent, regardless of depth, by using a space between selectors. */
+.box li {
+    color: blue;
+}
+
+/* Chaining Selectors: Combines multiple selectors without spaces for more specific rules. */
+li.done {
+    color: seagreen;
+}
+
+/* Combining Selector Types: Mixes different types of selectors for precise styling. */
+ul p.done {
+    font-size: 0.5rem;
+}
